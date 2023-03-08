@@ -1,4 +1,4 @@
-``/* ----------------------------------------------------------------------------
+/* ----------------------------------------------------------------------------
 FILE: fnc_init.sqf
 
 FUNCTION: OCAP_recorder_fnc_init
@@ -185,7 +185,7 @@ if (GVAR(missionName) == "") then {
 
 // Auto-save on empty - checked every 30 seconds
 // If a recording has been started, exceeds min mission time, and no players are on the server, auto-save
-//TODO: Add CBA GVAR "StartAnyways" var to the start wiat loop
+
 [{
   if (
     EGVAR(settings,saveOnEmpty) &&

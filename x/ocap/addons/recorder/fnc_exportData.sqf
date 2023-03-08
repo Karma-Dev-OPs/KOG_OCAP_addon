@@ -169,3 +169,4 @@ GVAR(startTime) = nil;
   _x setVariable [QGVARMAIN(unitType), nil];
 } count (allUnits + allDeadMen + vehicles);
 GVAR(nextId) = 0;
+GVAR(manualStart) = false;
