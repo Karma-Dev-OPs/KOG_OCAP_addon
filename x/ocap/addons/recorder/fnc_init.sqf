@@ -176,7 +176,7 @@ if (GVAR(missionName) == "") then {
   Start recording AFTER Briefing screen, so the beginning of the recording matches the start of the actual mission session.
 */
 [
-  {(getClientStateNumber > 9 && (count allPlayers) >= EGVAR(settings,minPlayerCount) && GVAR(autoStart)) || !isNil QGVAR(startTime)},
+  {(getClientStateNumber > 9 && (count allPlayers) >= EGVAR(settings,minPlayerCount) && GVAR(autoStart)) || !isNil QGVAR(startTime)} || GVAR_manualStart),
   {
     call FUNC(startRecording);
     [QGVARMAIN(customEvent), ["generalEvent", "Mission has started!"]] call CBA_fnc_serverEvent;
