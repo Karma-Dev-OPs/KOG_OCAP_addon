@@ -41,6 +41,7 @@ if (!isNil QGVAR(startTime)) exitWith {
 // VARIABLE: OCAP_recorder_recording
 // Global variable that represents whether or not recording is active [Bool]
 GVAR(recording) = false;
+GVAR(manualStart) = false;
 publicVariable QGVAR(recording);
 
 /*
